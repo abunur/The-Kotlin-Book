@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">KotlinBook Chapter 3</string>
-    <string name="button1">Button 1</string>
-    <string name="button2">Button 2</string>
-    <string name="button3">Button 3</string>
+    <string name="button1">Submit</string>
+    <string name="what_s_your_name">What\'s your name?</string>
+    <string name="textview">TextView</string>
+    <string name="name">Name</string>
 </resources>
