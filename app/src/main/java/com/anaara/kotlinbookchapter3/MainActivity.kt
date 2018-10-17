@@ -9,9 +9,9 @@ class MainActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         submitButton.setOnClickListener {
-          greetingLabel.text = userName.text
+
+            greetingLabel.text = "Hello ${if (userName.text.length > 0) userName.text else "human"}!"
         }
     }
 }
