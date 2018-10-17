@@ -10,8 +10,15 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         submitButton.setOnClickListener {
+            answerLabel.text = addTwoNumbers(firstNumber.text.toString(), secondNumber.text.toString())
 
-            greetingLabel.text = "Hello ${if (userName.text.length > 0) userName.text else "human"}!"
+
         }
+    }
+
+    fun addTwoNumbers(firstValue: String, secondValue: String): String {
+        val answerValue = firstValue + secondValue
+        return  answerValue
+
     }
 }
