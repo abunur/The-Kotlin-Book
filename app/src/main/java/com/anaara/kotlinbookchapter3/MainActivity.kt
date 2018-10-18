@@ -11,21 +11,21 @@ class MainActivity : Activity() {
     setContentView(R.layout.activity_main)
 
     submitButton.setOnClickListener {
-      try {
-        val firstValue = firstNumber.text.toString().toInt()
-        val secondValue = secondNumber.text.toString().toInt()
-        val answerValue = addTwoNumbers(firstValue, secondValue)
-        answerLabel.text = "$answerValue"
-      } catch (e: NumberFormatException) {
-        answerLabel.text = e.toString()
-      }
+
+      val firstValue = firstNumber.text.toString().toIntOrNull()
+      val secondValue = secondNumber.text.toString().toIntOrNull()
+      val answerValue = addTwoNumbers(firstValue, secondValue)
+      answerLabel.text = "$answerValue"
 
 
     }
   }
 
-  fun addTwoNumbers(firstValue: Int, secondValue: Int): Int {
-    val answerValue = firstValue + secondValue
+  fun addTwoNumbers(firstValue: Int?, secondValue: Int?): Int {
+    var answerValue = 0
+    if (firstValue != null && secondValue != null){
+      answerValue = firstNumber + secondNumber
+    }
     return answerValue
 
   }
