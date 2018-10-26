@@ -23,8 +23,8 @@ class MainActivity : Activity() {
 
   fun addTwoNumbers(firstValue: Int?, secondValue: Int?): Int {
     var answerValue = 0
-    if (firstValue != null && secondValue != null){
-      answerValue = firstNumber + secondNumber
+    if (firstValue != null && secondValue != null) {
+      answerValue = firstValue + secondValue
     }
     return answerValue
 
