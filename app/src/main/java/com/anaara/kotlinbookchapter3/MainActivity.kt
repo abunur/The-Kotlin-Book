@@ -15,7 +15,7 @@ class MainActivity : Activity() {
       val firstValue = firstNumber.text.toString().toIntOrNull()
       val secondValue = secondNumber.text.toString().toIntOrNull()
       val answerValue = addTwoNumbers(firstValue, secondValue)
-      answerLabel.text = "$answerValue"
+      answerLabel.text = " = $answerValue"
 
 
     }
