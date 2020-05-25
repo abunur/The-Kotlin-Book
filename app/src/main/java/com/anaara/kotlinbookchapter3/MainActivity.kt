@@ -15,7 +15,7 @@ class MainActivity : Activity() {
       val firstValue = firstNumber.text.toString().toIntOrNull()
       val secondValue = secondNumber.text.toString().toIntOrNull()
       val answerValue = addTwoNumbers(firstValue, secondValue)
-      answerLabel.text = "$answerValue"
+      answerLabel.text = " = $answerValue"
 
 
     }
@@ -23,8 +23,8 @@ class MainActivity : Activity() {
 
   fun addTwoNumbers(firstValue: Int?, secondValue: Int?): Int {
     var answerValue = 0
-    if (firstValue != null && secondValue != null){
-      answerValue = firstNumber + secondNumber
+    if (firstValue != null && secondValue != null) {
+      answerValue = firstValue + secondValue
     }
     return answerValue
 
